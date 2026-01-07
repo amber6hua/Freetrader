@@ -32,6 +32,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: start;
+    position: relative;
 }
 
 /* Banner Row */
@@ -230,6 +231,27 @@
     color: var(--accent-green);
 }
 
+.rewards-cta .register-btn {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 40px;
+    background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 0 auto 16px;
+    box-shadow: 0 4px 15px rgba(14, 203, 129, 0.3);
+    max-width: 300px;
+    text-align: center;
+}
+
+.rewards-cta .register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(14, 203, 129, 0.4);
+}
+
 .rewards-cta .qrcode-container {
     padding-top: 16px;
     border-top: 1px solid var(--border-color);
@@ -345,6 +367,10 @@
 @media (max-width: 768px) {
     .rewards-page {
         padding-top: 70px;
+    }
+
+    .qrcode-desktop-only {
+        display: none;
     }
 
     .rewards-container {
@@ -476,5 +502,23 @@
     .rewards-cta .qrcode-img {
         width: 100px;
         height: 100px;
+    }
+
+    .rewards-cta .register-btn {
+        position: absolute;
+        bottom: 20px;
+        left: 16px;
+        right: 16px;
+        width: calc(100% - 32px);
+        margin: 0;
+        border-radius: 12px;
+        padding: 16px 20px;
+        font-size: 16px;
+        z-index: 1000;
+        box-shadow: 0 4px 20px rgba(14, 203, 129, 0.4);
+    }
+
+    .rewards-cta {
+        padding-bottom: 80px;
     }
 }
