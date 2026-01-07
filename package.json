@@ -1,0 +1,9 @@
+{
+  "name": "freetrader1",
+  "version": "1.0.0",
+  "description": "Freetrader rewards page",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
+  }
+}

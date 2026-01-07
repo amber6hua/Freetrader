@@ -1,0 +1,480 @@
+/* Page2 - Rewards Page Styles */
+
+/* White Theme Override */
+.rewards-page {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f7fa;
+    --bg-card: #ffffff;
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a5568;
+    --text-muted: #718096;
+    --border-color: #e2e8f0;
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.rewards-page .header {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rewards-page .logo-text {
+    color: #1a1a2e;
+}
+
+.rewards-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Banner Row */
+.banner-row {
+    grid-column: 1 / -1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 280px;
+}
+
+.banner-img {
+    height: auto;
+    /* border-radius: 12px; */
+    position: absolute;
+}
+
+.banner-img:first-child {
+    width: 20%;
+    max-width: 280px;
+    left: 10%;
+    z-index: 1;
+}
+
+.banner-img:last-child {
+    width: 65%;
+    max-width: 500px;
+    right: 5%;
+    z-index: 2;
+}
+
+.rewards-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.rewards-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Reward Card */
+.reward-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 0;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(0.95);
+    transform-origin: center top;
+}
+
+.reward-card:hover {
+    transform: scale(0.95) translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.reward-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.reward-number {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.reward-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.reward-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.highlight-text {
+    color: var(--accent-green);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Example Section */
+.reward-example {
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    padding: 10px 12px;
+    border-left: 3px solid var(--accent-green);
+}
+
+.example-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    margin-bottom: 6px;
+}
+
+.example-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.example-text strong {
+    color: var(--text-primary);
+}
+
+/* Calculation Display */
+.calculation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.calc-formula {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-family: 'Courier New', monospace;
+}
+
+.calc-result {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent-green);
+    background: rgba(14, 203, 129, 0.1);
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+/* CTA Section */
+.rewards-cta {
+    text-align: center;
+    margin-top: 0;
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transform: scale(0.95);
+    transform-origin: center top;
+}
+
+.rewards-cta .download-text {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.rewards-cta .download-link {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    word-break: break-all;
+    padding: 10px 16px;
+    background: rgba(0, 217, 255, 0.1);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    margin-bottom: 16px;
+}
+
+.rewards-cta .download-link:hover {
+    background: rgba(0, 217, 255, 0.2);
+    color: var(--accent-green);
+}
+
+.rewards-cta .qrcode-container {
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+.rewards-cta .qrcode-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.rewards-cta .qrcode-hint {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Steps Image Section */
+.steps-container {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 12px 16px;
+    margin-bottom: 0;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    grid-column: 1 / -1;
+    transform: scale(0.95);
+    transform-origin: center top;
+}
+
+.steps-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+
+.steps-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    min-width: 90px;
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-3px);
+}
+
+.step-number {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-green);
+    background: rgba(14, 203, 129, 0.1);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.step-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.step-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.step-arrow {
+    width: 24px;
+    height: auto;
+    opacity: 0.5;
+}
+
+.steps-image-section {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.steps-img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rewards-page {
+        padding-top: 70px;
+    }
+
+    .rewards-container {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .rewards-image {
+        max-width: 280px;
+    }
+
+    .banner-row {
+        height: 130px;
+    }
+
+    .banner-img:first-child {
+        width: 27%;
+        left: 5%;
+    }
+
+    .banner-img:last-child {
+        width: 67%;
+        right: 5%;
+    }
+
+    .rewards-title {
+        font-size: 14px;
+    }
+
+    .reward-card {
+        padding: 16px;
+    }
+
+    .reward-name {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .reward-number {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .reward-description {
+        font-size: 12px;
+    }
+
+    .highlight-text {
+        font-size: 14px;
+    }
+
+    .example-title {
+        font-size: 12px;
+    }
+
+    .example-text {
+        font-size: 12px;
+    }
+
+    .calc-formula {
+        font-size: 12px;
+    }
+
+    .calc-result {
+        font-size: 14px;
+    }
+
+    .calculation {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .steps-img {
+        width: 100%;
+    }
+
+    .steps-title {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .steps-box {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 6px;
+        justify-content: space-between;
+        padding: 12px;
+    }
+
+    .step-item {
+        min-width: auto;
+        padding: 8px 4px;
+        flex: 1;
+    }
+
+    .step-number {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    .step-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .step-text {
+        font-size: 12px;
+    }
+
+    .step-arrow {
+        width: 14px;
+        flex-shrink: 0;
+    }
+
+    .rewards-cta .download-text {
+        font-size: 12px;
+    }
+
+    .rewards-cta .download-link {
+        font-size: 12px;
+    }
+
+    .rewards-cta .qrcode-hint {
+        font-size: 10px;
+    }
+
+    .rewards-cta .qrcode-img {
+        width: 100px;
+        height: 100px;
+    }
+}
