@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/css/main.css">
     <link rel="stylesheet" href="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/css/page2.css">
 </head>
+
 <body>
     <!-- 顶部导航栏 -->
     <header class="header" style="background-color: rgb(252 216 73);">
@@ -35,65 +37,94 @@
     <!-- 主要内容区域 -->
     <main class="rewards-page">
         <div class="rewards-container">
-            <!-- <h1 class="rewards-title">All you need is a mobile phone, you can make money</h1> -->
+            <!-- Banner Section -->
             <div class="banner-row">
-                <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/banner1.png" class="banner-img" alt="Banner 1">
-                <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/banner2.png" class="banner-img" alt="Banner 2">
+                <!-- Left: Phone with text -->
+                <div class="banner-left">
+                    <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/banner1.png" class="banner-phone-img" alt="Phone">
+                    <div class="banner-text">
+                        <h2 class="banner-headline">Earn ₹2,620/day |<br>FreeTrader - Trade &amp; Profit Anywhere</h2>
+                        <p class="banner-subtitle">Start with just a mobile phone</p>
+                    </div>
+                </div>
+                <!-- Right: Testimonial Card -->
+                <div class="banner-testimonial">
+
+                    <div class="testimonial-content">
+                        <p class="testimonial-name">Rita from Mumbai:</p>
+                        <p class="testimonial-earning">Earned <strong>₹82,000</strong> in<br><strong>30 Days</strong>
+                        </p>
+                    </div>
+                    <div class="testimonial-avatar">
+                        <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/avatar.png" alt="Avatar" class="avatar-img">
+                    </div>
+                </div>
             </div>
+
             <!-- Steps Section -->
             <div class="steps-container">
-                <div class="steps-title">3 Steps to Start Your Money-Making Journey</div>
+                <div class="steps-title">3 Steps To Start Your Money-Making Journey</div>
                 <div class="steps-box">
                     <div class="step-item">
                         <div class="step-number">Step 1</div>
                         <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/invite-step1-register.png" class="step-icon" alt="Step 1">
-                        <div class="step-text">Register</div>
+                        <div class="step-text">Register Now</div>
                     </div>
                     <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/invite-step-arrow.png" class="step-arrow" alt="arrow">
                     <div class="step-item">
                         <div class="step-number">Step 2</div>
                         <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/invite-step2-build-upi.png" class="step-icon" alt="Step 2">
-                        <div class="step-text">Bind UPI</div>
+                        <div class="step-text">Step 2:</div>
                     </div>
                     <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/invite-step-arrow.png" class="step-arrow" alt="arrow">
                     <div class="step-item">
                         <div class="step-number">Step 3</div>
                         <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/invite-step3-make-money.png" class="step-icon" alt="Step 3">
-                        <div class="step-text">Make Money</div>
+                        <div class="step-text">Start Earning</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Trading Rewards -->
-            <div class="reward-card">
-                <div class="reward-header">
-                    <span class="reward-number">1</span>
-                    <h2 class="reward-name">Trading Rewards</h2>
-                </div>
-                <p class="reward-description">
-                    You will receive <span class="highlight-text">2.5% + 6</span> of your transaction amount as your profit
-                </p>
-                <div class="reward-example">
-                    <h3 class="example-title">For example:</h3>
-                    <p class="example-text">
-                        If you trade <strong>₹5000</strong> each time and do it <strong>20 times</strong> a day, you will complete a transaction of <strong>₹100000</strong>, and you will earn:
-                    </p>
-                    <div class="calculation">
-                        <span class="calc-formula">100000 * 2.5% + (6*20) = </span>
-                        <span class="calc-result">₹2,620/day</span>
+            <!-- Bottom Section: Two Columns -->
+            <div class="bottom-section">
+                <!-- Left Column: Trading Rewards + Funds Secured -->
+                <div class="bottom-left">
+                    <div class="reward-card">
+                        <div class="reward-header">
+                            <span class="reward-number">1</span>
+                            <h2 class="reward-name">Trading Rewards</h2>
+                        </div>
+                        <div class="reward-main-amount">₹2,620/day</div>
+                        <p class="reward-profit-text">
+                            Daily profit is expected to be <span class="highlight-percent">15-18%</span>
+                        </p>
+                        <div class="reward-monthly">₹78,000+/month</div>
+                    </div>
+                    <!-- Funds Secured Badge -->
+                    <div class="funds-secured">
+                        <div class="funds-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+                            </svg>
+                        </div>
+                        <div class="funds-text">
+                            <span class="funds-title">Funds Secured by</span>
+                            <span class="funds-subtitle">Third-Party</span>
+                        </div>
                     </div>
                 </div>
-                <p class="reward-description" style="margin-bottom: 0px; margin-top: 10px; text-align: center; font-weight: 700;">
-                    Daily profit is expected to be <span class="highlight-text">15-18%</span>
-                </p>
-            </div>
 
-            <div class="rewards-cta">
-                <p class="download-text">If you are ready to earn money, click the button to register:</p>
-                <a href="https://freetraderapp.com/invite/KQkO8" class="register-btn" target="_blank">Register</a>
-                <div class="qrcode-container qrcode-desktop-only">
-                    <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/QRCode.png" alt="QR Code" class="qrcode-img">
-                    <p class="qrcode-hint">Scan to download</p>
+                <!-- Right Column: CTA -->
+                <div class="bottom-right">
+                    <a href="https://freetraderapp.com/invite/KQkO8" class="cta-button" target="_blank">
+                        Register & Get ₹2,620 Daily
+                    </a>
+                    <p class="cta-subtitle">Click the Button | 1-Min Registration</p>
+                    <div class="qrcode-container">
+                        <img src="https://pub-04768165bc154fcbb85011ca461df4b2.r2.dev/main/static/img/QRCode.png" alt="QR Code" class="qrcode-img">
+                        <p class="qrcode-hint">Scan to download</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,4 +135,5 @@
         <div class="bg-pattern"></div>
     </div>
 </body>
+
 </html>
